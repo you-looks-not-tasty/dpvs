@@ -59,8 +59,7 @@ func TestHttpChecker(t *testing.T) {
 
 	for _, target := range http_url_targets {
 		host := target[strings.Index(target, "://")+3:]
-		checker := NewHttpChecker("GET", target, "")
-		checker.Host = host
+		checker := NewHttpChecker("GET", host, "")
 		checker.ResponseCodes = []HttpCodeRange{{200, 200}}
 		if strings.HasPrefix(target, "https") {
 			checker.Secure = true

@@ -1413,7 +1413,9 @@ func init() {
         "passive",
         "tcp",
         "udp",
-        "ping"
+        "ping",
+        "udpping",
+        "http"
       ]
     },
     "Error": {
@@ -3812,7 +3814,9 @@ func init() {
         "passive",
         "tcp",
         "udp",
-        "ping"
+        "ping",
+        "udpping",
+        "http"
       ]
     },
     "Error": {

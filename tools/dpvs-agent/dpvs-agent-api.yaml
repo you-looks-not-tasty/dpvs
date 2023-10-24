@@ -476,6 +476,8 @@ definitions:
       - tcp
       - udp
       - ping
+      - udpping
+      - http
 
   VirtualServerList:
     type: object

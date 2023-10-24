@@ -57,7 +57,7 @@ func (h *putVsRsHealth) Handle(params apiVs.PutVsVipPortRsHealthParams) middlewa
 	}
 
 	rssModels := new(models.RealServerExpandList)
-	rssModels.Items = make([]*models.RealServerSpecExpand, len(active))
+	rssModels.Items = make([]*models.RealServerSpecExpand, 0)
 	validRSs := make([]*types.RealServerSpec, 0)
 	expiredRSs := make([]*types.RealServerSpec, 0)
 	if params.Rss != nil {
